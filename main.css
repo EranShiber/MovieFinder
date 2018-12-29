@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 2rem;
+    color: black;
+    font-weight: 800;
+    
+}
+.nav-list {
+    padding-top: 2rem;
+}
+
+.logo  {
+    font-weight: 700;
+}
+
+.nav-list li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;  
+    transition: all .2s ease-out;
+    
+}
+.nav-list li a:hover{
+    border-bottom: 2px solid red;
+}
+
+.nav-list li:not(:last-child) {
+    padding-right: 2rem;
+}
+/* main starts here */
+.main-content {
+    color: white;
+    background-image: linear-gradient(to right top, #000000, #ff0000d2),url("img/movies-tiles.jpg");
+    background-position: top;    
+    height: 80vh; 
+    position: relative;
+    clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 0);
+}
+
+.main-content .content-box{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.content-box .header-main {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.content-box .header-sub {
+    color: #00000041;
+    font-weight: 700;
+    text-transform: uppercase;  
+}
+
+.content-box a:link, a:visited {
+    
+    text-transform: uppercase;
+    transition: all .2s;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 0.6rem 0.8rem;
+    border-radius: 100px;
+    
+    
+}
+.content-box a:hover {
+box-shadow: 5px 10px 20px black;
+background-color: #ff000017;
+color:white;
+}
+
+.content-box a:active {
+    box-shadow: 1px 1px 1px black;
+    background-color: #ff000017;;
+    color:white;
+    }
+
+
+
+
+/* SECTION MOVIE FINDER */
+.section-movie-finder {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+
+.section-study-case {
+    margin-top: -18vh;
+    padding-top: 20rem;
+    background-color: #f8f8f8;
+    
+}
+
+.icon-study-case {
+    padding: 1.6rem;
+    margin: 2rem 0;
+    font-size: 4rem;
+    margin-top: 2rem;
+    border: 2px solid black;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.726), red);
+    color: white;
+}
+
+#list-results h3{
+    font-weight: 700;
+}
+#list-results h4{
+    
+}
